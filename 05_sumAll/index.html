@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sumAll = function(x, y) {
+            // create an array to store the numbers
+            let array = [];
+
+            // loop through x and y until you reach y, adding each number as we go
+            for (let i = x; i <= y; i++) {
+                array.push(i);
+            }
+
+            // sum the numbers in the array
+            let sum = 0;
+
+            for (let z = 0; z < array.length; z++) {
+                sum = array[z] + sum;
+            }
+
+            // // return the sum
+            // return sum;
+
+        };
+
+        sumAll(1, 4);
+
+    </script>
+    
+</body>
+</html>

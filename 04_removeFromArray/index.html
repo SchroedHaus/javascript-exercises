@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const removeFromArray = function(arr, ...removals) {
+            
+            console.log(arr);
+            console.log(removals);
+
+            for (let removal in removals) {
+                console.log(removals[removal]);
+
+                let deletionIndex = arr.indexOf(removals[removal]);
+
+                if (deletionIndex == -1) {
+                    continue;
+                }
+
+                console.log(deletionIndex);
+
+                arr.splice(deletionIndex, 1);
+            }
+
+            console.log(arr);
+        };
+
+        removeFromArray([1, 2, 3, 4], 3, 2, 7, "tacos");
+    </script>
+</body>
+</html>
